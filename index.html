@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Pesos por Porcentaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Calculadora de Pesos por Porcentaje</h1>
+    <p class="subtitle">Edita los kilos base y se actualizarán las tablas automáticamente:</p>
+
+    <div class="inputs" id="inputs"></div>
+
+    <h2>Tabla Ligeras (45%, 40%, 30%, 20%)</h2>
+    <div id="tablaLigeras"></div>
+
+    <h2>Tabla Medianas (75%, 70%, 60%, 50%)</h2>
+    <div id="tablaMedianas"></div>
+
+    <h2>Tabla Máximas (95%, 90%, 85%, 80%)</h2>
+    <div id="tablaMaximas"></div>
+
+    <button onclick="exportarExcel()">📊 Exportar a Excel</button>
+
+    <!-- Librería SheetJS para exportar a Excel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
